@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E47BD</color>
+    <color name="colorPrimaryDark">#1E47BD</color>
+    <color name="colorAccent">#1E47BD</color>
+    <!--主题颜色-->
+    <color name="colorTheme">#1E47BD</color>
+    <color name="colorWhite">@android:color/white</color>
+
+
+    <!--页面背景颜色-->
+    <color name="colorPageBg">#eeeeee</color>
+    <!--标题字体-->
+    <color name="colorTitle">#333333</color>
+
+    <color name="colorTextPrimary">#666666</color>
+    <color name="colorMoney">#e73828</color>
+    <color name="color36">#363636</color>
+    <color name="colorRed">#ffff0000</color>
+
+    <color name="colorLine">#e5e5e5</color>
+    <color name="colorTransparent">@android:color/transparent</color>
+
+    <!-- de1313  ff9000  b8e000  00b5af  ae00ff  008ae1 -->
+    <color name="colour_car_1">#ffD5D5D5</color>
+    <color name="colour_car_2">#ff111111</color>
+    <color name="colour_car_3">#ff0082CC</color>
+    <color name="colour_car_4">#ffFFEA00</color>
+    <color name="colour_car_5">#ffFFA200</color>
+    <color name="colour_car_6">#ffCC0033</color>
+    <color name="colour_car_7">#ff2BA742</color>
+    <color name="colour_car_8">#ffC5CC00</color>
+    <color name="colour_car_9">#ffBE43C3</color>
+
+</resources>

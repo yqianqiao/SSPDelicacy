@@ -1,0 +1,26 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="cn.com.quickpark.sspdelicacy.ui.parking.ParkingFragment">
+
+
+        <!--<cn.com.quickpark.sspdelicacy.view.ScheduleLine-->
+        <!--android:id="@+id/schedule"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp" />-->
+
+        <cn.com.quickpark.sspdelicacy.view.Demo xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/demo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:default_size="100" />
+
+    </FrameLayout>
+</layout>

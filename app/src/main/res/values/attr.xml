@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="keyboard">
+        <attr name="xml" format="reference" />
+    </declare-styleable>
+
+
+    <attr name="indexBarTextSize" format="dimension" />
+
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" />
+        <attr name="indexBarPressBackground" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="Demo">
+        <attr name="default_size">dimension</attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 基本的TextView的相关style -->
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Text.White" parent="Text">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!--color:333333-->
+    <style name="Text.Dark" parent="Text">
+        <item name="android:textColor">@color/colorTitle</item>
+    </style>
+    <!--color_959595-->
+    <style name="Text.Light" parent="Text">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+
+    <!--12sp-->
+    <style name="Text.Normal" parent="Text">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.Small" parent="Text">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!--sp14-->
+    <style name="Text.Larger" parent="Text">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--16sp-->
+    <style name="Text.MoreLarger" parent="Text">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--白 sp12-->
+    <style name="Text.Normal.White" parent="Text.Normal">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!--666666 sp12-->
+    <style name="Text.Normal.Dark" parent="Text.Normal">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+    <!--333333 sp12-->
+    <style name="Text.Normal.Light" parent="Text.Normal">
+        <item name="android:textColor">@color/colorTitle</item>
+    </style>
+
+    <!--白 sp10-->
+    <style name="Text.Small.White" parent="Text.Small">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--333 sp10-->
+    <style name="Text.Small.Dark" parent="Text.Small">
+        <item name="android:textColor">@color/colorTitle</item>
+    </style>
+    <!--666 sp10-->
+    <style name="Text.Small.Light" parent="Text.Small">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+    <!--白 sp14-->
+    <style name="Text.Larger.White" parent="Text.Larger">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!--333 sp14-->
+    <style name="Text.Larger.Dark" parent="Text.Larger">
+        <item name="android:textColor">@color/colorTitle</item>
+    </style>
+    <!--666 sp14-->
+    <style name="Text.Larger.Light" parent="Text.Larger">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+    <!--白 sp16-->
+    <style name="Text.MoreLarger.White" parent="Text.MoreLarger">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!--333 sp16-->
+    <style name="Text.MoreLarger.Dark" parent="Text.MoreLarger">
+        <item name="android:textColor">@color/colorTitle</item>
+    </style>
+    <!--666 sp16-->
+    <style name="Text.MoreLarger.Light" parent="Text.MoreLarger">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+    <!--主题颜色 sp16-->
+    <style name="Text.MoreLarger.FF8a00" parent="Text.MoreLarger">
+        <item name="android:textColor">@color/colorTheme</item>
+    </style>
+
+
+    <!-- 分割线 -->
+    <style name="Divider">
+        <item name="android:background">#ccc</item>
+    </style>
+
+
+    <style name="Divider.Horizontal" parent="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+
+    <style name="Divider.Vertical" parent="Divider">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+
+    <!--查看大图页面，全屏显示-->
+    <style name="ViewBigPicTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorTheme</item>
+        <item name="colorPrimaryDark">@color/colorTheme</item>
+        <item name="colorAccent">@color/colorTheme</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!--查看大图页面，全屏显示-->
+    <style name="dialog" parent="Theme.AppCompat.Dialog">
+
+        <item name="android:windowFullscreen">true</item>
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无标题-->
+        <item name="windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置动画，在这里使用让它继承系统的Animation.Dialog-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

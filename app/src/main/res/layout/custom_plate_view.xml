@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fulllayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_round_title"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <EditText
+        android:id="@+id/plate_num1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/colorTitle" />
+
+    <View
+        android:layout_width="0.3dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorTitle" />
+
+    <EditText
+        android:id="@+id/plate_num2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/colorTitle" />
+
+    <View
+        android:layout_width="0.3dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorTitle" />
+
+    <EditText
+        android:id="@+id/plate_num3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/colorTitle" />
+
+    <View
+        android:layout_width="0.3dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorTitle" />
+
+    <EditText
+        android:id="@+id/plate_num4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/colorTitle" />
+
+    <View
+        android:layout_width="0.3dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorTitle" />
+
+    <EditText
+        android:id="@+id/plate_num5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/colorTitle" />
+
+    <View
+        android:layout_width="0.3dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorTitle" />
+
+    <EditText
+        android:id="@+id/plate_num6"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/colorTitle" />
+
+    <View
+        android:layout_width="0.3dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorTitle" />
+
+    <LinearLayout
+        android:id="@+id/layout_x"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/plate_numX"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/colorTitle" />
+
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorTitle" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/plate_num7"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/colorTitle" />
+</LinearLayout>

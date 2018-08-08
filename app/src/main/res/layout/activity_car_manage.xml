@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPageBg"
+        tools:context="cn.com.quickpark.sspdelicacy.ui.my.carmanage.CarManageActivity">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/viewPager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/view_bg25"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_bottom_line_title"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="主驾车辆"
+            android:textColor="@color/colorTitle"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg25"
+            app:layout_constraintStart_toStartOf="@+id/view_bg25"
+            app:layout_constraintTop_toTopOf="@+id/view_bg25" />
+
+        <Switch
+            android:id="@+id/car_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg25"
+            app:layout_constraintEnd_toEndOf="@+id/view_bg25"
+            app:layout_constraintTop_toTopOf="@+id/view_bg25" />
+
+        <View
+            android:id="@+id/view_car_color"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_bottom_line_title"
+            app:layout_constraintTop_toBottomOf="@+id/view_bg25" />
+
+        <TextView
+            android:id="@+id/textView92"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="车身颜色"
+            android:textColor="@color/colorTitle"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_car_color"
+            app:layout_constraintStart_toStartOf="@+id/view_car_color"
+            app:layout_constraintTop_toTopOf="@+id/view_car_color" />
+
+        <ImageView
+            android:id="@+id/iv_car_color"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_car_color"
+            app:layout_constraintEnd_toStartOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="@+id/view_car_color"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_car_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view_car_color"
+            app:srcCompat="@mipmap/ic_more" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="删除车辆"
+            android:textColor="@color/colorTitle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

@@ -1,0 +1,304 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPageBg"
+            tools:context="cn.com.quickpark.sspdelicacy.ui.homepark.HomePageFragment">
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/mBanner"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/Text.MoreLarger.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/realTime"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mBanner" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/Text.MoreLarger.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/takeCar"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/mBanner" />
+
+            <View
+                android:id="@+id/view_bg"
+                android:layout_width="0dp"
+                android:layout_height="192dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_round_white"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/Text.Normal.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="剩余泊位"
+                app:layout_constraintStart_toStartOf="@+id/view_bg"
+                app:layout_constraintTop_toTopOf="@+id/view_bg" />
+
+            <View
+                android:id="@+id/view_dome"
+                android:layout_width="0dp"
+                android:layout_height="115dp"
+                android:background="#7FBFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg"
+                app:layout_constraintStart_toStartOf="@+id/view_bg" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="73"
+                android:textColor="@color/colorTheme"
+                android:textSize="60sp"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg"
+                app:layout_constraintStart_toStartOf="@+id/view_bg"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <View
+                android:id="@+id/view_takeCar"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_round_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/view_bg" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView6"-->
+            <!--style="@style/Text.Normal.Dark"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_marginStart="12dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:text="在场车辆"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/view_takeCar"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/view_takeCar" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView7"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="12dp"-->
+            <!--android:text="2"-->
+            <!--android:textColor="@color/colorTheme"-->
+            <!--android:textSize="24sp"-->
+            <!--app:layout_constraintBottom_toBottomOf="@+id/textView6"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/view_takeCar"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/textView6" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView8"-->
+            <!--style="@style/Text.Normal.Dark"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="12dp"-->
+            <!--android:text="消费总额"-->
+            <!--app:layout_constraintBottom_toBottomOf="@+id/view_takeCar"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/textView6" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView9"-->
+            <!--style="@style/Text.MoreLarger.Dark"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="￥12.2"-->
+            <!--android:textColor="@color/colorTitle"-->
+            <!--android:textSize="16sp"-->
+            <!--app:layout_constraintBottom_toBottomOf="@+id/textView8"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/textView7"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/textView8" />-->
+            <TextView
+                android:id="@+id/tv_SceneCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTitle"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_takeCar"
+                app:layout_constraintEnd_toEndOf="@+id/view_takeCar"
+                app:layout_constraintStart_toStartOf="@+id/view_takeCar"
+                app:layout_constraintTop_toTopOf="@+id/view_takeCar" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/Text.MoreLarger.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/saveCar"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/view_takeCar" />
+
+            <View
+                android:id="@+id/view_bg2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_round_white"
+                app:layout_constraintBottom_toBottomOf="@+id/view_dome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/tv_save_car"
+                style="@style/Text.Normal.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/ic_scan"
+                android:gravity="center"
+                android:text="扫码存车"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg2"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg2"
+                app:layout_constraintStart_toStartOf="@+id/view_bg2"
+                app:layout_constraintTop_toTopOf="@+id/view_bg2" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView12"-->
+            <!--style="@style/Text.Normal.Dark"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginEnd="28dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:drawableTop="@mipmap/ic_reservation"-->
+            <!--android:text="预约"-->
+            <!--app:layout_constraintBottom_toBottomOf="@+id/view_bg2"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/view_bg2"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/view_bg2" />-->
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/Text.MoreLarger.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/shortcut"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/view_dome" />
+
+            <View
+                android:id="@+id/view_bg3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_round_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="6dp"
+                android:drawableTop="@mipmap/ic_record"
+                android:gravity="center"
+                android:text="@string/record"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg3"
+                app:layout_constraintStart_toStartOf="@+id/view_bg3"
+                app:layout_constraintTop_toTopOf="@+id/view_bg3" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:drawableTop="@mipmap/ic_money"
+                android:gravity="center"
+                android:text="@string/complement"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg3"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg3"
+                app:layout_constraintStart_toStartOf="@+id/view_bg3"
+                app:layout_constraintTop_toTopOf="@+id/view_bg3" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="42dp"
+                android:drawablePadding="6dp"
+                android:drawableTop="@mipmap/ic_service"
+                android:gravity="center"
+                android:text="@string/customerService"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg3"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg3"
+                app:layout_constraintTop_toTopOf="@+id/view_bg3" />
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="#7FBFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/view_dome"
+                app:layout_constraintEnd_toEndOf="@+id/view_dome"
+                app:layout_constraintHorizontal_bias="0.847"
+                app:layout_constraintStart_toStartOf="@+id/view_dome">
+
+                <LinearLayout
+                    android:id="@+id/mRecyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>

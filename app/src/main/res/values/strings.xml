@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SSPDelicacy</string>
+
+    <string name="double_click_exit">再按一次退出程序</string>
+    <string name="homePage">首页</string>
+    <string name="parking">停车</string>
+    <string name="my">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="realTime">实时</string>
+    <string name="takeCar">取车</string>
+    <string name="saveCar">存车</string>
+    <string name="shortcut">快捷</string>
+    <string name="record">记录</string>
+    <string name="complement">补交</string>
+    <string name="customerService">客服</string>
+    <string name="transactPacking">办理停车</string>
+    <string name="select_time">选择时间</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="car_color_select_info">您选择的颜色将作为这辆车的标签使用</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="color">颜色</string>
+    <string name="concentration">浓淡</string>
+    <string name="cm_scene_car">暂无在场车辆</string>
+    <string name="proceed_save_car">存车中…</string>
+    <string name="startSaveCar">开始存车</string>
+    <string name="dialog_title">提示</string>
+    <string name="brand_type">品牌型号  </string>
+    <string name="car_color">车身颜色</string>
+    <string name="nickname">昵称</string>
+    <string name="phone">电话</string>
+    <string name="Birthday">生日</string>
+    <string name="sex">性别</string>
+    <string name="signature">签名</string>
+    <string name="exit_login">退出登录</string>
+</resources>

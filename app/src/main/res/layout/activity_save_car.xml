@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPageBg"
+        tools:context="cn.com.quickpark.sspdelicacy.ui.homepark.savecar.SaveCarActivity">
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="车场库区"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_bg15"
+            android:layout_width="0dp"
+            android:layout_height="92dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_round_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+        <TextView
+            android:id="@+id/tv_park_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@mipmap/ic_park"
+            android:text="中央城二期"
+            android:textColor="@color/colorTitle"
+            app:layout_constraintBottom_toTopOf="@+id/view_divider4"
+            app:layout_constraintStart_toStartOf="@+id/view_bg15"
+            app:layout_constraintTop_toTopOf="@+id/view_bg15" />
+
+        <View
+            android:id="@+id/view_divider4"
+            style="@style/Divider.Horizontal"
+            android:layout_width="0dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg15"
+            app:layout_constraintEnd_toEndOf="@+id/view_bg15"
+            app:layout_constraintStart_toStartOf="@+id/view_bg15"
+            app:layout_constraintTop_toTopOf="@+id/view_bg15" />
+
+        <TextView
+            android:id="@+id/tv_car_barn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@mipmap/ic_garage"
+            android:text="A库"
+            android:textColor="@color/colorTitle"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg15"
+            app:layout_constraintStart_toStartOf="@+id/view_bg15"
+            app:layout_constraintTop_toBottomOf="@+id/view_divider4" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="选择车辆"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_bg15" />
+
+        <View
+            android:id="@+id/view_choose_car"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_round_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+        <TextView
+            android:id="@+id/tv_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@mipmap/ic_car"
+            android:text="请选择"
+            app:layout_constraintBottom_toBottomOf="@+id/view_choose_car"
+            app:layout_constraintStart_toStartOf="@+id/view_choose_car"
+            app:layout_constraintTop_toTopOf="@+id/view_choose_car" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_choose_car"
+            app:layout_constraintEnd_toEndOf="@+id/view_choose_car"
+            app:layout_constraintTop_toTopOf="@+id/view_choose_car"
+            app:srcCompat="@mipmap/ic_select" />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="设定取车凭证"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_choose_car" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_voucher"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_round_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80">
+
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/et_input_password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/et_input_password"
+                app:srcCompat="@mipmap/ic_password" />
+
+            <EditText
+                android:id="@+id/et_input_password"
+                android:layout_width="210dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="54dp"
+                android:background="@drawable/bg_round_title"
+                android:ems="10"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:paddingStart="24dp"
+                android:textColor="#999"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_showPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/et_input_password"
+                app:layout_constraintStart_toEndOf="@+id/et_input_password"
+                app:layout_constraintTop_toTopOf="@+id/et_input_password"
+                app:srcCompat="@mipmap/ic_show" />
+
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/et_input_password2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/et_input_password2"
+                app:srcCompat="@mipmap/ic_password" />
+
+            <EditText
+                android:id="@+id/et_input_password2"
+                android:layout_width="210dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_round_title"
+                android:ems="10"
+                android:hint="请再次输入密码"
+                android:inputType="textPassword"
+                android:paddingStart="24dp"
+                android:textColor="#999"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                app:layout_constraintTop_toBottomOf="@+id/et_input_password" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_bg17"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_round_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_oneself_password"
+            app:layout_constraintStart_toStartOf="@+id/view_bg17"
+            app:layout_constraintTop_toTopOf="@+id/tv_oneself_password"
+            app:srcCompat="@mipmap/ic_key" />
+
+        <TextView
+            android:id="@+id/tv_oneself_password"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_round_main"
+            android:gravity="center"
+            android:text="自设密码"
+            android:textColor="@color/colorTheme"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg17"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="@+id/view_bg17" />
+
+        <TextView
+            android:id="@+id/tv_random_password"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_round_title"
+            android:gravity="center"
+            android:text="随机密码"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg17"
+            app:layout_constraintStart_toEndOf="@+id/tv_oneself_password"
+            app:layout_constraintTop_toTopOf="@+id/view_bg17" />
+
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="计价规则"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_voucher" />
+
+        <View
+            android:id="@+id/view_bg18"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_round_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+        <TextView
+            android:id="@+id/tv_start_save"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_gradual_main"
+            android:gravity="center"
+            android:text="@string/startSaveCar"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

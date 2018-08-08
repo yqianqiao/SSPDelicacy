@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPageBg"
+        tools:context="cn.com.quickpark.sspdelicacy.ui.my.cersonalcenter.PersonalCenterActivity">
+
+        <View
+            android:id="@+id/view_bg19"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg19"
+            app:layout_constraintEnd_toEndOf="@+id/view_bg19"
+            app:layout_constraintStart_toStartOf="@+id/view_bg19"
+            app:layout_constraintTop_toTopOf="@+id/view_bg19" />
+
+        <View
+            android:id="@+id/view_nickname"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_bottom_line_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_bg19" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/nickname"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_nickname"
+            app:layout_constraintStart_toStartOf="@+id/view_nickname"
+            app:layout_constraintTop_toTopOf="@+id/view_nickname" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@mipmap/ic_more"
+            android:drawablePadding="12dp"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_nickname"
+            app:layout_constraintEnd_toEndOf="@+id/view_nickname"
+            app:layout_constraintTop_toTopOf="@+id/view_nickname" />
+
+        <View
+            android:id="@+id/view_phone"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_bottom_line_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_nickname" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/phone"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_phone"
+            app:layout_constraintStart_toStartOf="@+id/view_phone"
+            app:layout_constraintTop_toTopOf="@+id/view_phone" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@mipmap/ic_more"
+            android:drawablePadding="12dp"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_phone"
+            app:layout_constraintEnd_toEndOf="@+id/view_phone"
+            app:layout_constraintTop_toTopOf="@+id/view_phone" />
+
+        <View
+            android:id="@+id/view_Birthday"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_bottom_line_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_phone" />
+
+        <TextView
+            android:id="@+id/tv_Birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/Birthday"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_Birthday"
+            app:layout_constraintStart_toStartOf="@+id/view_Birthday"
+            app:layout_constraintTop_toTopOf="@+id/view_Birthday" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@mipmap/ic_more"
+            android:drawablePadding="12dp"
+            android:text="--"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_Birthday"
+            app:layout_constraintEnd_toEndOf="@+id/view_Birthday"
+            app:layout_constraintTop_toTopOf="@+id/view_Birthday" />
+
+        <View
+            android:id="@+id/view_sex"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_bottom_line_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_Birthday" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sex"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_sex"
+            app:layout_constraintStart_toStartOf="@+id/view_sex"
+            app:layout_constraintTop_toTopOf="@+id/view_sex" />
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@mipmap/ic_more"
+            android:drawablePadding="12dp"
+            android:text="-"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_sex"
+            app:layout_constraintEnd_toEndOf="@+id/view_sex"
+            app:layout_constraintTop_toTopOf="@+id/view_sex" />
+
+        <View
+            android:id="@+id/view_signature"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_bottom_line_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_sex" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/signature"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_signature"
+            app:layout_constraintStart_toStartOf="@+id/view_signature"
+            app:layout_constraintTop_toTopOf="@+id/view_signature" />
+
+        <TextView
+            android:id="@+id/tv_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@mipmap/ic_more"
+            android:drawablePadding="12dp"
+            android:text="暂无"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_signature"
+            app:layout_constraintEnd_toEndOf="@+id/view_signature"
+            app:layout_constraintTop_toTopOf="@+id/view_signature" />
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="@string/exit_login"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

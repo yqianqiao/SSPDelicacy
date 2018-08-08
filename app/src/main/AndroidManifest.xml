@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.com.quickpark.sspdelicacy">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".app.InitApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- name //固定值 -->
+        <!-- authorities ==路径 前面为包名，后面为fileprovider固定值，使用包名便于区分 -->
+        <!-- exported ==//是否支持其它应用调用当前组件 ，要求为flase -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="cn.com.quickpark.sspdelicacy.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name=".base.BaseActivity"/> -->
+        <activity android:name=".ui.homepark.takecar.TakeCarActivity" />
+        <activity android:name=".ui.homepark.waitcardetails.CarWaitActivity" />
+        <activity android:name=".ui.homepark.savecar.SaveCarActivity" />
+        <activity android:name=".ui.ScannerActivity" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:theme="@style/ViewBigPicTheme" />
+        <activity android:name=".ui.my.cersonalcenter.PersonalCenterActivity" />
+        <activity android:name=".ui.my.carmanage.CarManageActivity" />
+        <activity android:name=".ui.my.carmanage.addcar.AddCarActivity" />
+        <activity android:name=".ui.my.carmanage.CarColorActivity" />
+        <activity android:name=".ui.my.carmanage.addcar.CarBrandActivity" />
+        <activity
+            android:name=".ui.TakePhotoActivity"
+           android:theme="@style/dialog" />
+    </application>
+
+</manifest>

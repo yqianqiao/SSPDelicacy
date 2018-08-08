@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPageBg"
+        tools:context="cn.com.quickpark.sspdelicacy.ui.homepark.waitcardetails.CarWaitActivity">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="实时状况"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <cn.com.quickpark.sspdelicacy.view.ScheduleLine
+            android:id="@+id/mScheduleLine"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="待取车辆"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mScheduleLine" />
+
+        <View
+            android:id="@+id/view_bg10"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.67" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@+id/view_bg10"
+            app:layout_constraintTop_toTopOf="@+id/view_bg10"
+            app:srcCompat="@mipmap/ic_car_tab" />
+
+        <TextView
+            android:id="@+id/tv_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="8dp"
+            android:text="京N18223"
+            android:textColor="#363636"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg10"
+            app:layout_constraintStart_toStartOf="@+id/view_bg10" />
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="10dp"
+            android:text="列队排位"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/mScheduleLine" />
+
+        <View
+            android:id="@+id/view_bg11"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@+id/view_bg11"
+            app:layout_constraintTop_toTopOf="@+id/view_bg11"
+            app:srcCompat="@mipmap/ic_queue" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="前面还有-位"
+            android:textColor="#878787"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg11"
+            app:layout_constraintEnd_toEndOf="@+id/view_bg11"
+            app:layout_constraintStart_toStartOf="@+id/view_bg11"
+            app:layout_constraintTop_toTopOf="@+id/view_bg11" />
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="第-号"
+            android:textColor="#363636"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg11"
+            app:layout_constraintEnd_toEndOf="@+id/view_bg11"
+            app:layout_constraintStart_toStartOf="@+id/view_bg11"
+            app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="10dp"
+            android:text="列队时间"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/mScheduleLine" />
+
+        <View
+            android:id="@+id/view_bg12"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@+id/view_bg12"
+            app:layout_constraintTop_toTopOf="@+id/view_bg12"
+            app:srcCompat="@mipmap/ic_queue_time" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="计划"
+            android:textColor="#363636"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/view_bg12"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <TextView
+            android:id="@+id/tv_expected_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="-"
+            android:textColor="#363636"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView64"
+            app:layout_constraintStart_toEndOf="@+id/textView64"
+            app:layout_constraintTop_toTopOf="@+id/textView64" />
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="实际"
+            android:textColor="#363636"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg12"
+            app:layout_constraintStart_toStartOf="@+id/textView64" />
+
+        <TextView
+            android:id="@+id/textView75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:gravity="bottom"
+            android:text="-"
+            android:textColor="#363636"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView66"
+            app:layout_constraintStart_toEndOf="@+id/textView64"
+            app:layout_constraintTop_toTopOf="@+id/textView66" />
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="取车候时"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_bg10" />
+
+        <View
+            android:id="@+id/view_bg13"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintBottom_toTopOf="@+id/textView74"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+        <View
+            android:id="@+id/view_round_red"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/img_round_red"
+            app:layout_constraintStart_toStartOf="@+id/view_bg13"
+            app:layout_constraintTop_toTopOf="@+id/view_bg13" />
+
+        <TextView
+            android:id="@+id/tv_entrance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color36"
+            android:textSize="58sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg13"
+            app:layout_constraintEnd_toEndOf="@+id/view_bg13"
+            app:layout_constraintStart_toStartOf="@+id/view_bg13"
+            app:layout_constraintTop_toTopOf="@+id/view_bg13" />
+
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="入口"
+            android:textColor="@color/color36"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_entrance"
+            app:layout_constraintStart_toEndOf="@+id/tv_entrance" />
+
+        <TextView
+            android:id="@+id/textView72"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="10dp"
+            android:text="取车用时"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/view_bg12" />
+
+        <View
+            android:id="@+id/view_bg14"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/view_bg14"
+            app:layout_constraintStart_toStartOf="@+id/view_bg14"
+            app:layout_constraintTop_toTopOf="@+id/view_bg14"
+            app:srcCompat="@mipmap/ic_timer" />
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="12分17秒"
+            android:textColor="@color/color36"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg14"
+            app:layout_constraintEnd_toEndOf="@+id/view_bg14"
+            app:layout_constraintStart_toStartOf="@+id/view_bg14" />
+
+        <TextView
+            android:id="@+id/tv_revoke"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_gradual_main"
+            android:gravity="center"
+            android:text="撤销"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
